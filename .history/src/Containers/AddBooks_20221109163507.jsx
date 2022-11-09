@@ -7,10 +7,7 @@ const AddBooks = () => {
         auteur: ''
     }
 
-    const handlSubmit = (e) => {
-        e.preventDefault()
-        console.log(Data);
-    }
+    const handlSubmit=(e)
     const [Data, setData] = useState(initialState);
     return (
         <main role="main">
@@ -23,7 +20,7 @@ const AddBooks = () => {
                         Ajouter un livre dans votre biobliotheque
                     </p>
 
-                    <form className="form-inline justify-content-center row g-3" onSubmit={handlSubmit}>
+                    <form className="form-inline justify-content-center row g-3">
                         <div className="col-auto">
                             <input type="text"
                                 className="form-control ml-3"

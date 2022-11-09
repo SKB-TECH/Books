@@ -6,11 +6,6 @@ const AddBooks = () => {
         titre: '',
         auteur: ''
     }
-
-    const handlSubmit = (e) => {
-        e.preventDefault()
-        console.log(Data);
-    }
     const [Data, setData] = useState(initialState);
     return (
         <main role="main">
@@ -23,14 +18,13 @@ const AddBooks = () => {
                         Ajouter un livre dans votre biobliotheque
                     </p>
 
-                    <form className="form-inline justify-content-center row g-3" onSubmit={handlSubmit}>
+                    <form className="form-inline justify-content-center row g-3">
                         <div className="col-auto">
                             <input type="text"
                                 className="form-control ml-3"
                                 id="inputPassword2"
                                 placeholder="Titre du livre"
                                 value={Data.titre}
-                                onChange={(e => setData({ ...Data, titre: e.target.value }))}
                             />
                         </div>
                         <div className="col-auto">
@@ -39,9 +33,9 @@ const AddBooks = () => {
                                 id="inputPassword2"
                                 placeholder="Auteur du livre"
                                 value={Data.auteur}
-                                onChange={(e => setData({ ...Data, auteur: e.target.value }))}
-                            />
-
+                                ON
+                                />
+                                
                         </div>
                         <div class="col-auto">
                             <button type="submit" className="btn btn-secondary mb-3">Ajouter</button>
