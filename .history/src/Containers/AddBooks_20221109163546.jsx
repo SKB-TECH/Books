@@ -8,8 +8,7 @@ const AddBooks = () => {
     }
 
     const handlSubmit = (e) => {
-        e.preventDefault()
-        console.log(Data);
+        e.preventDefault('')
     }
     const [Data, setData] = useState(initialState);
     return (
